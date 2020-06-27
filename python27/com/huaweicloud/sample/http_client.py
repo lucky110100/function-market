@@ -13,7 +13,7 @@ def get_token():
 
 def get_vm_list():
     token = ""
-    headers = {"Content-Type": "application/json", "X-Auth-Token": token}
+    headers = {"Content-Type": "application/json;charset=UTF-8", "X-Auth-Token": token}
     url = "https://ecs.cn-north-1.myhuaweicloud.com/v1/da2d96081e954e42b900edbe2dc27b2b/cloudservers/detail?offset=1&limit=10"
     r = requests.get(url, headers=headers)
     print r.text
